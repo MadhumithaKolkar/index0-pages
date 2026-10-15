@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Confirmed - INDEX 0</title>
+<style>
+  :root {
+    --bg: #05070a;
+    --surface: #10141b;
+    --line: rgba(255,255,255,0.1);
+    --ink: #d7dbe0;
+    --ink-dim: #9aa4b2;
+    --teal: #1cd6ac;
+    --orange: #f97316;
+    --font-mono: "JetBrains Mono", "Courier New", monospace;
+    --font-sans: -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f7f5;
+      --surface: #ffffff;
+      --line: rgba(0,0,0,0.1);
+      --ink: #15181c;
+      --ink-dim: #5b6572;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 36px 28px;
+    text-align: center;
+  }
+  .mark {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mark svg { width: 26px; height: 26px; }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    margin: 0;
+  }
+  .hint {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--ink-dim);
+  }
+  .hint b { color: var(--orange); font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#1cd6ac" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12.5 9.5 18 20 6" />
+      </svg>
+    </div>
+    <p class="eyebrow">Index 0</p>
+    <h1>Your account is confirmed</h1>
+    <p>You can close this page now and go back to the app to sign in.</p>
+    <div class="hint">Nothing else to do here, just <b>switch back to Index 0</b> on your phone or desktop.</div>
+  </div>
+</body>
+</html>
